@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다양한 템플릿 일기장</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>메뉴</h2>
+            <ul>
+                <li data-template="diary">📝 일기 템플릿</li>
+                <li data-template="memo">🗒️ 메모 템플릿</li>
+                <li data-template="idea">💡 아이디어 노트 템플릿</li>
+                <li data-template="scheduler">📅 스케줄러 템플릿</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>다양한 템플릿 일기장</h1>
+            <textarea id="noteInput" placeholder="여기에 노트를 작성하세요..."></textarea>
+            <button id="saveButton">저장</button>
+            <div id="notesContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
